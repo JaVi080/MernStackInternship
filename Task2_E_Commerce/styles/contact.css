@@ -1,0 +1,140 @@
+
+
+
+.contact-info {
+    background-color: var(--bg-light);
+    padding: var(--spacing-md);
+    border-radius: 15px;
+    height: 100%;
+}
+
+.contact-info-title {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-info-text {
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+
+.contact-method-item {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.contact-method-item:last-child {
+    border-bottom: none;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.contact-method-title {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.contact-method-text {
+    color: var(--text-dark);
+    margin-bottom: 0.2rem;
+}
+
+.contact-method-subtext {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.social-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.social-link:hover {
+    color: var(--primary-dark);
+}
+
+
+.office-hours {
+    background-color: var(--bg-white);
+    padding: var(--spacing-md);
+    border-radius: 10px;
+}
+
+.office-hours-title {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.office-hours-list {
+    list-style: none;
+    padding: 0;
+}
+
+.office-hours-list li {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+/* Contact form */
+.contact-form-wrapper {
+    background-color: var(--bg-white);
+    padding: var(--spacing-md);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.contact-form-title {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-form-subtitle {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-label {
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control,
+.form-select {
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.75rem;
+    transition: var(--transition-fast);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(45, 95, 76, 0.1);
+}
+
+.form-note {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-align: center;
+}
+

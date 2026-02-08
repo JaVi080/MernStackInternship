@@ -1,0 +1,130 @@
+
+
+.about-section-title {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.about-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-text {
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+}
+
+.about-text-large {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.about-image-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.about-img-placeholder {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #3d7a5e 0%, #2d5f4c 100%);
+}
+
+.mission-img {
+    background: linear-gradient(135deg, #d4a574 0%, #c89361 100%);
+}
+
+/* Values cards */
+.about-values {
+    background-color: var(--bg-light);
+}
+
+.value-card {
+    background-color: var(--bg-white);
+    padding: var(--spacing-md);
+    border-radius: 15px;
+    text-align: center;
+    transition: var(--transition-normal);
+    height: 100%;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.value-title {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.value-text {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/* --- */
+.mission-card {
+    background-color: var(--bg-light);
+    padding: var(--spacing-lg);
+    border-radius: 20px;
+}
+
+/* Stats section */
+.about-stats {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+}
+
+.stat-item {
+    padding: var(--spacing-md);
+}
+
+.stat-number {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: var(--bg-white);
+}
+
+/* Call to action section */
+.about-cta {
+    background: linear-gradient(135deg, var(--bg-light) 0%, #fff 100%);
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - PureGlow</title>
+    
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fontts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custtom CSS -->
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="./styles/cart.css">
+</head>
+<body>
+    
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">PureGlow</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-link active" href="cart.html">
+                            Cart <span class="cart-badge">3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Shopping Cart</h1>
+            <p class="page-subtitle">Review your items and proceed to checkout</p>
+        </div>
+    </section>
+
+    <!-- Cart section -->
+    <section class="cart-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Cart itemms list -->
+                <div class="col-lg-8">
+                    <div class="cart-items">
+                        <h4 class="cart-section-title mb-4">Cart Items (3)</h4>
+                        
+                        <!-- Cart Item 1 -->
+                        <div class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=200&h=200&fit=crop" alt="Vitamin C Serum" style="width: 120px; height: 120px; object-fit: cover; border-radius: 10px;">
+                            </div>
+                            
+                            <div class="cart-item-details">
+                                <h5 class="cart-item-name">Vitamin C Serum</h5>
+                                <p class="cart-item-category">Face Care • 50ml</p>
+                                <p class="cart-item-price">PKR 4,500</p>
+                            </div>
+                            
+                            <div class="cart-item-actions">
+                                <div class="cart-quantity-controls">
+                                    <button class="cart-qty-btn" onclick="decreaseQty(1)">−</button>
+                                    <input type="number" class="cart-qty-input" id="qty-1" value="2" min="1" readonly>
+                                    <button class="cart-qty-btn" onclick="increaseQty(1)">+</button>
+                                </div>
+                                
+                                <div class="cart-item-total">
+                                    <strong id="total-1">PKR 9,000</strong>
+                                </div>
+                                
+                                <button class="cart-remove-btn" title="Remove item">
+                                    🗑️
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Cart Item 2 -->
+                        <div class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=200&h=200&fit=crop" alt="Hydrating Face Cream" style="width: 120px; height: 120px; object-fit: cover; border-radius: 10px;">
+                            </div>
+                            
+                            <div class="cart-item-details">
+                                <h5 class="cart-item-name">Hydrating Face Cream</h5>
+                                <p class="cart-item-category">Moisturizer • 100ml</p>
+                                <p class="cart-item-price">PKR 3,800</p>
+                            </div>
+                            
+                            <div class="cart-item-actions">
+                                <div class="cart-quantity-controls">
+                                    <button class="cart-qty-btn" onclick="decreaseQty(2)">−</button>
+                                    <input type="number" class="cart-qty-input" id="qty-2" value="1" min="1" readonly>
+                                    <button class="cart-qty-btn" onclick="increaseQty(2)">+</button>
+                                </div>
+                                
+                                <div class="cart-item-total">
+                                    <strong id="total-2">PKR 3,800</strong>
+                                </div>
+                                
+                                <button class="cart-remove-btn" title="Remove item">
+                                    🗑️
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Cart Item 3 -->
+                        <div class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=200&h=200&fit=crop" alt="Night Recovery Oil" style="width: 120px; height: 120px; object-fit: cover; border-radius: 10px;">
+                            </div>
+                            
+                            <div class="cart-item-details">
+                                <h5 class="cart-item-name">Night Recovery Oil</h5>
+                                <p class="cart-item-category">Treatment • 30ml</p>
+                                <p class="cart-item-price">PKR 5,200</p>
+                            </div>
+                            
+                            <div class="cart-item-actions">
+                                <div class="cart-quantity-controls">
+                                    <button class="cart-qty-btn" onclick="decreaseQty(3)">−</button>
+                                    <input type="number" class="cart-qty-input" id="qty-3" value="1" min="1" readonly>
+                                    <button class="cart-qty-btn" onclick="increaseQty(3)">+</button>
+                                </div>
+                                
+                                <div class="cart-item-total">
+                                    <strong id="total-3">PKR 5,200</strong>
+                                </div>
+                                
+                                <button class="cart-remove-btn" title="Remove item">
+                                    🗑️
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Action buttons -->
+                    <div class="cart-actions-footer mt-4">
+                        <a href="products.html" class="btn btn-outline-primary">← Continue Shopping</a>
+                        <button class="btn btn-outline-danger" onclick="clearCart()">Clear Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Order summry -->
+                <div class="col-lg-4">
+                    <div class="order-summary">
+                        <h4 class="summary-title">Order Summary</h4>
+                        
+                        <div class="summary-row">
+                            <span class="summary-label">Subtotal:</span>
+                            <span class="summary-value" id="subtotal">PKR 18,000</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span class="summary-label">Shipping:</span>
+                            <span class="summary-value shipping-free">FREE</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span class="summary-label">Tax (8%):</span>
+                            <span class="summary-value" id="tax">PKR 1,440</span>
+                        </div>
+                        
+                        <hr class="summary-divider">
+                        
+                        <div class="summary-row summary-total">
+                            <span class="summary-label">Total:</span>
+                            <span class="summary-value" id="total">PKR 19,440</span>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-lg w-100 mt-4 checkout-btn">
+                            Proceed to Checkout
+                        </button>
+                        
+                        <div class="security-badges mt-3 text-center">
+                            <small class="text-muted">🔒 Secure Checkout • 🛡️ 30-Day Returns</small>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="footer-title">PureGlow</h5>
+                    <p class="footer-text">Premium natural care products for your healthy, radiant skin. Crafted with love and nature's best ingredients.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Shop Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-links">
+                     <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="264f4840496656535443414a49510845494b">javi@gmail.com</a></li>
+                        <li>Phone: 0348-123456</li>
+                        <li>Address: Johar Town Laore Pakistan</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom text-center mt-4 pt-4">
+                <p>&copy; 2024 PureGlow. All rights reserved. | Made with 💚 for natural beauty</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Customm JS -->
+    <script src="script.js"></script>
+     <script src="./script/cart.js"></script>
+</body>
+</html>

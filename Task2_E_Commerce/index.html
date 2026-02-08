@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureGlow - Premium Care Products</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+  
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home_about.css">
+</head>
+<body>
+    
+ <!-- nav bar sec -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <!-- containerer use  -->
+        <div class="container">
+         
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">PureGlow</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar collapse -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+         
+                <ul class="navbar-nav ms-auto">
+              
+                    <li class="nav-item">
+                    
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-link" href="cart.html">
+                            Cart <span class="cart-badge">3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <section class="hero-section">
+        <div class="container">
+          
+            <div class="row align-items-center min-vh-100">
+             
+                <div class="col-lg-6">
+                 
+                    <div class="hero-content">
+                        <h1 class="hero-title">Natural Beauty, <br>Pure Care</h1>
+                        <p class="hero-subtitle">Discover premium skincare products crafted from nature's finest ingredients for your radiant glow.</p>
+                        <div class="hero-buttons">
+                          
+                            <a href="products.html" class="btn btn-primary btn-lg">Shop Now</a>
+                    
+                            <a href="about.html" class="btn btn-outline-primary btn-lg">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <!-- Placeholder for product image -->
+                            <!-- <div class="product-showcase"></div> -->
+                             <div class="product-showcase" style="background-image: url('https://media.istockphoto.com/id/687770962/vector/design-cosmetics-product-advertising-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=CxL6EEFDJBuJxubDaMX9bAWV-swD8zKqwfQ8ApWP4ko='); background-size: cover; background-position: center;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative bg ele-->
+        <div class="hero-bg-circle hero-bg-circle-1"></div>
+        <div class="hero-bg-circle hero-bg-circle-2"></div>
+    </section>
+
+    <!-- Feature sec -->
+    <section class="features-section py-5">
+        <div class="container">
+            <!-- Grid with Gutters  -->
+    
+            <div class="row g-4">
+    
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">🌿</div>
+                        <h3 class="feature-title">100% Natural</h3>
+                        <p class="feature-text">All products made from pure, natural ingredients without harmful chemicals.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">🐰</div>
+                        <h3 class="feature-title">Cruelty Free</h3>
+                        <p class="feature-text">Never tested on animals. Ethical beauty you can feel good about.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">📦</div>
+                        <h3 class="feature-title">Free Shipping</h3>
+                        <p class="feature-text">Complimentary shipping on all orders over $50. Fast & secure delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- product sec -->
+ 
+    <section class="featured-products py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Our bestselling care essentials loved by customers worldwide</p>
+            </div>
+            
+            <!-- Product grid using Bootstrap columns -->
+            <div class="row g-4">
+                
+                <!-- Product Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                          
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=400&fit=crop" alt="Vitamin C Serum" class="product-img">
+                            <div class="product-badge">New</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Vitamin C Serum</h4>
+                            <p class="product-category">Face Care</p>
+                            <div class="product-footer">
+                                <span class="product-price">PKR 4,500</span>
+                          
+                                <a href="product-details.html" class="btn btn-sm btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&h=400&fit=crop" alt="Hydrating Face Cream" class="product-img">
+                            <div class="product-badge sale-badge">Sale</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Hydrating Face Cream</h4>
+                            <p class="product-category">Moisturizer</p>
+                            <div class="product-footer">
+                                <span class="product-price">PKR 3,800</span>
+                                <a href="product-details.html" class="btn btn-sm btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Prod Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=400&fit=crop" alt="Gentle Cleanser" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Gentle Cleanser</h4>
+                            <p class="product-category">Face Wash</p>
+                            <div class="product-footer">
+                                <span class="product-price">PKR 2,800</span>
+                                <a href="product-details.html" class="btn btn-sm btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&h=400&fit=crop" alt="Night Recovery Oil" class="product-img">
+                            <div class="product-badge">Popular</div>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Night Recovery Oil</h4>
+                            <p class="product-category">Treatment</p>
+                            <div class="product-footer">
+                                <span class="product-price">PKR 5,200</span>
+                                <a href="product-details.html" class="btn btn-sm btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+           
+            <div class="text-center mt-5">
+                <a href="products.html" class="btn btn-outline-primary btn-lg">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer sec -->
+   
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Footer Column 1: About -->
+                <div class="col-md-4">
+                    <h5 class="footer-title">PureGlow</h5>
+                    <p class="footer-text">Premium natural care products for your healthy, radiant skin. Crafted with love and nature's best ingredients.</p>
+                </div>
+                
+                <!-- Footer Column 2: Quick Links -->
+                <div class="col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Shop Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Column 3: Contact Info -->
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-links">
+                      <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="264f4840496656535443414a49510845494b">javi@gmail.com</a></li>
+                        <li>Phone: 0348-123456</li>
+                        <li>Address: Johar Town Laore Pakistan</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright bar -->
+            <div class="footer-bottom text-center mt-4 pt-4">
+                <p>&copy; 2026 PureGlow. All rights reserved. | Made with 💚 for natural beauty</p>
+            </div>
+        </div>
+    </footer>
+
+      
+
+      <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
