@@ -1,0 +1,27 @@
+
+/* Custom styles that Bootstrap doesn't have */
+
+.hero-section {
+  background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+  color: white;
+  min-height: 500px;
+}
+
+.hero-content {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Keeps your nice hover effect on the cards */
+.featured-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
