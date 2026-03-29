@@ -49,6 +49,7 @@ const CategoryBar = () => {
 const styles: Record<string, React.CSSProperties> = {
   categoryBar: {
     // backgroundColor: "#f8f9fa",
+    // marginTop: "0px",
     background: "#0f0f0f",  
     borderBottom: "1px solid #dee2e6",
     padding: "0.5rem 1rem",
