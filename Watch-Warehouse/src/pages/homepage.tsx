@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Features from "../Components/Features";
+import ProductList from "../Components/productList";
+import Footer from "../Components/footer";
 
 const HomePage = () => {
   return (
@@ -39,6 +41,8 @@ const HomePage = () => {
 
       {/* for features  */}
       <Features/>
+      <ProductList limit={8} />
+      <Footer/>
     </>
   );
 };
