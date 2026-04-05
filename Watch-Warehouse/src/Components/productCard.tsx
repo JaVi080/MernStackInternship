@@ -8,7 +8,7 @@
 // the code — that's the whole point of TypeScript over plain JavaScript.
 // ============================================================
 import type { Product } from "../types/product";
-
+import {Link} from "react-router-dom";
 
 // ============================================================
 // 📦 CONCEPT: Props (Properties)
@@ -295,6 +295,7 @@ const ProductCard = ({ product }: Props) => {
             </button>
 
             {/* Secondary button — View Details (eye icon) */}
+            <Link to={`/Products/${product.id}`} >
             <button
               className="btn"
               style={{
@@ -317,6 +318,7 @@ const ProductCard = ({ product }: Props) => {
             >
               👁
             </button>
+            </Link>
           </div>
         </div>
       </div>

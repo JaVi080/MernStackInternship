@@ -6,10 +6,8 @@ import Footer from "../Components/footer";
 const ProductPage = () => {
   return (
     <>
-      <Navbar />
       <CategoryBarWithStyles />
       <ProductList />
-      <Footer />
     </>
   );
 };

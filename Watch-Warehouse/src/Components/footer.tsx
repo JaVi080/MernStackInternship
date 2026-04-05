@@ -27,7 +27,7 @@ const sectionTitleStyle = {
 
 const quickLinks = [
     { label: "Home", to: "/" },
-    { label: "Shop", to: "/shop" },
+    { label: "Products", to: "/products" },
     { label: "About Us", to: "/about" },
     { label: "Contact", to: "/contact" },
 ];

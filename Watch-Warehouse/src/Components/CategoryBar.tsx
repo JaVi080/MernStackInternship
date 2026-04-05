@@ -1,9 +1,10 @@
 
 import React from "react";
+import { Link } from "react-router";
 
 const CategoryBar = () => {
   const categories = ["Sports", "Luxury", "Smart Watches","Man Watches","Women Watches"];
-  const brands = ["Apple", "Samsung", "Rolex"];
+  const brands = ["Casio", "Fossil", "Rolex"];
 
   return (
     <div className="bg-light border-bottom py-5" >
@@ -12,9 +13,11 @@ const CategoryBar = () => {
         {/* Categories */}
         <div className="d-flex gap-2">
           {categories.map((cat) => (
-            <button key={cat} className="btn btn-outline-warning btn-sm text-warning category-btn">
-              {cat}
-            </button>
+            <Link to={`/category/${cat.toLowerCase()}`}>
+              <button key={cat} className="btn btn-outline-warning btn-sm text-warning category-btn">
+                {cat}
+              </button>
+            </Link>
           ))}
         </div>
 

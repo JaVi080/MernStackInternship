@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import Features from "../Components/Features";
 import ProductList from "../Components/productList";
 import Footer from "../Components/footer";
+import CategoryBar from "../Components/CategoryBar";
 
 const HomePage = () => {
   return (
     <>
+      <CategoryBar/>
       {/* Carousel */}
       <div id="demo" className="carousel slide" data-bs-ride="carousel"style={{ marginBottom: "70px" }}>
 
@@ -42,7 +44,6 @@ const HomePage = () => {
       {/* for features  */}
       <Features/>
       <ProductList limit={8} />
-      <Footer/>
     </>
   );
 };

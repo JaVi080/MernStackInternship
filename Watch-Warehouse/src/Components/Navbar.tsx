@@ -41,7 +41,7 @@ interface NavLink {
 //   → To remove a link, just delete a line here.
 const NAV_LINKS: NavLink[] = [
     { label: "Home", path: "/" },
-    { label: "Shop", path: "/shop" },
+    { label: "Products", path: "/products" },
     { label: "About", path: "/about" },
     { label: "Contact", path: "/contact" },
 ];

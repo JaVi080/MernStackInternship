@@ -1,0 +1,79 @@
+/* 
+ * CSS Concept: Variables (Custom Properties)
+ * Used to define reusable colors and keep consistency across styles.
+ */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-bg: #f8f9fa;
+  --text-dark: #212529;
+}
+
+/* 
+ * CSS Concept: Flexbox & Centering
+ * Used to center the whole product card vertically and horizontally in the viewport.
+ */
+.product-details-wrapper {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-bg);
+  padding: 2rem 0;
+}
+
+/* 
+ * CSS Concept: Box Model & Box Shadow
+ * Added padding, border-radius, and a shadow to create a "card" look that lifts off the background.
+ */
+.custom-product-card {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden; /* Ensures the image doesn't overflow the rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* CSS Concept: Transitions for smooth hover effect */
+}
+
+.custom-product-card:hover {
+  transform: translateY(-5px); /* Lift up slightly on hover */
+}
+
+/* 
+ * CSS Concept: Object-fit
+ * Ensures the product image covers its container perfectly without stretching, cropping where necessary.
+ */
+.product-image {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  max-height: 500px;
+  object-fit: contain; 
+  background-color: #f1f3f5; /* Light gray background for images that don't fill the space */
+  padding: 1rem;
+}
+
+/* 
+ * CSS Concept: Typography adjustments
+ * Enhancing the font sizes, weights, and letter-spacing for better readability.
+ */
+.product-title {
+  font-family: 'Inter', sans-serif; /* Assuming Inter or similar sans-serif */
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* 
+ * CSS Concept: CSS Grid (Alternative to Flexbox)
+ * Just a small usage here to align icon/badge details in a grid.
+ */
+.product-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
