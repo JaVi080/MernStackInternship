@@ -1,0 +1,30 @@
+/* Sidebar custom width and layout configuration */
+.sidebar-custom {
+  width: 250px;
+  min-width: 250px;
+  height: 100vh;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+/* Hover styling for the unselected sidebar links */
+.sidebar-item-hover:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white !important;
+}
+
+/* Mobile responsive styling for the sidebar to behave like a drawer */
+@media (max-width: 768px) {
+  .sidebar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    box-shadow: 4px 0 15px rgba(0,0,0,0.5);
+  }
+
+  /* Shows the sidebar drawer when the '.show' class is applied */
+  .sidebar-custom.show {
+    transform: translateX(0);
+  }
+}
