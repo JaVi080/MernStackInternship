@@ -1,0 +1,131 @@
+/* =============================================================
+   Donations.css — Custom styles for the Donations page
+   
+   CONCEPT: When should you use custom CSS vs Bootstrap?
+   - Use Bootstrap classes for layout, spacing, flexbox, grids, buttons
+   - Use custom CSS when you need specific colors, shadows, animations,
+     or any style that Bootstrap does not provide out of the box
+   ============================================================= */
+
+/* --- Page title styling --- */
+.donations-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  /* Custom gradient text — not available in Bootstrap */
+  background: linear-gradient(135deg, #1a7a4a, #28a745);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* --- "Add Donation" button --- 
+   Custom green button with a hover lift effect */
+.btn-add-donation {
+  background-color: #1a7a4a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  /* transition = smooth animation when styles change (like hover) */
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-add-donation:hover {
+  background-color: #145e38;
+  color: white;
+  transform: translateY(-2px); /* lift effect on hover */
+  box-shadow: 0 6px 16px rgba(26, 122, 74, 0.35);
+}
+
+/* --- Form Card (the add/edit form container) ---
+   A white card with a subtle left green border accent */
+.donation-form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border-left: 4px solid #1a7a4a; /* colored accent border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Table Container Card --- */
+.donation-table-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  overflow: hidden; /* keeps rounded corners with table inside */
+}
+
+/* --- Table Head Styling --- */
+.donations-table-head th {
+  background-color: #1a7a4a;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 14px 16px;
+  border: none;
+}
+
+/* --- Table Row hover --- 
+   Bootstrap adds a default hover color, but we can customize it */
+.table-hover tbody tr:hover {
+  background-color: #f0faf4; /* light green tint on row hover */
+  transition: background-color 0.15s ease;
+}
+
+/* --- Edit Button ---
+   Soft outline button, turns green on hover */
+.btn-edit {
+  border: 1.5px solid #1a7a4a;
+  color: #1a7a4a;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.btn-edit:hover {
+  background-color: #1a7a4a;
+  color: white;
+}
+
+/* --- Delete Button ---
+   Soft red outline, turns solid red on hover */
+.btn-delete {
+  border: 1.5px solid #dc3545;
+  color: #dc3545;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.btn-delete:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* --- Save (Submit) Button --- */
+.btn-save {
+  background-color: #1a7a4a;
+  color: white;
+  border: none;
+  padding: 9px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+.btn-save:hover {
+  background-color: #145e38;
+  color: white;
+}
+
+/* --- Form input focus color ---
+   When the user clicks inside an input field, Bootstrap shows a blue glow.
+   We override it to match our green brand color. */
+.donation-form-card .form-control:focus,
+.donation-form-card .form-select:focus {
+  border-color: #1a7a4a;
+  box-shadow: 0 0 0 0.2rem rgba(26, 122, 74, 0.2);
+}

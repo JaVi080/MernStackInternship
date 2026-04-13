@@ -1,0 +1,91 @@
+/* Beneficiaries.css — reuses the same green theme for consistency */
+
+.ben-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0d5c36, #28a745);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-ben-add {
+  background-color: #0d5c36;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.btn-ben-add:hover {
+  background-color: #0a4529;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.ben-form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border-left: 4px solid #0d5c36;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.ben-form-card .form-control:focus,
+.ben-form-card .form-select:focus {
+  border-color: #0d5c36;
+  box-shadow: 0 0 0 0.2rem rgba(13, 92, 54, 0.2);
+}
+
+.ben-table-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+.ben-table-head th {
+  background-color: #0d5c36;
+  color: white;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 14px 16px;
+  border: none;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f0faf4;
+}
+
+.btn-ben-edit {
+  border: 1.5px solid #0d5c36;
+  color: #0d5c36;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+.btn-ben-edit:hover { background: #0d5c36; color: white; }
+
+.btn-ben-delete {
+  border: 1.5px solid #dc3545;
+  color: #dc3545;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+.btn-ben-delete:hover { background: #dc3545; color: white; }
+
+.btn-ben-save {
+  background: #0d5c36;
+  color: white;
+  border: none;
+  padding: 9px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+.btn-ben-save:hover { background: #0a4529; color: white; }

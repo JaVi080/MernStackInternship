@@ -1,12 +1,19 @@
 import { Link } from "react-router-dom";
 import { MdMenu, MdNotifications, MdAccountCircle } from "react-icons/md";
 
+// CONCEPT: useUser — our custom hook that reads the shared user data from Context
+// This lets the Navbar display the name that the user sets in the Settings page
+import { useUser } from "../context/UserContext";
+
 // Passing the toggleSidebar function as a prop so we can open the sidebar on mobile
 interface NavbarProps {
   toggleSidebar: () => void;
 }
 
 function Navbar({ toggleSidebar }: NavbarProps) {
+  // Read the display name from context (shared with Setting.tsx)
+  const { displayName } = useUser();
+
   return (
     <nav className="navbar navbar-expand-lg border-bottom px-3 bg-white shadow-sm sticky-top">
       <div className="container-fluid">
@@ -37,10 +44,9 @@ function Navbar({ toggleSidebar }: NavbarProps) {
 
           {/* Profile Link taking the user to Settings or Profile page */}
           <Link to="/setting" className="text-decoration-none d-flex align-items-center gap-2 text-dark">
-            {/* Adding the Account icon */}
             <MdAccountCircle size={32} className="text-primary" />
-            {/* Displaying name only on screens above extra-small (xs) */}
-            <span className="d-none d-sm-block fw-medium">Admin User</span>
+            {/* Now showing the dynamic name from context instead of hardcoded text */}
+            <span className="d-none d-sm-block fw-medium">{displayName}</span>
           </Link>
           
         </div>

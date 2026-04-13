@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { MdDashboard, MdAttachMoney, MdPeople, MdEvent, MdSettings, MdClose } from "react-icons/md";
+import { MdDashboard, MdAttachMoney, MdPeople, MdEvent, MdSearch, MdSettings, MdClose } from "react-icons/md";
 
 // Defining the props this component expects
 interface SidebarProps {
@@ -18,6 +18,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
     { path: "/donations", name: "Donations", icon: <MdAttachMoney size={20} /> },
     { path: "/beneficiaries", name: "Beneficiaries", icon: <MdPeople size={20} /> },
     { path: "/events", name: "Events", icon: <MdEvent size={20} /> },
+    { path: "/search", name: "Search", icon: <MdSearch size={20} /> },
     { path: "/setting", name: "Setting", icon: <MdSettings size={20} /> },
   ];
 
@@ -64,6 +65,13 @@ export default function Sidebar({ isOpen, toggleSidebar }: SidebarProps) {
             </Link>
           );
         })}
+      </div>
+
+      {/* Put the back button outside the map loop, at the bottom of the sidebar */}
+      <div className="mt-auto p-3">
+        <Link to="/" className="btn btn-outline-light w-100 d-flex align-items-center justify-content-center gap-2">
+          Back
+        </Link>
       </div>
     </div>
   );

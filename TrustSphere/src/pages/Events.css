@@ -1,0 +1,125 @@
+/* =============================================================
+   Events.css — Styles for the Events page
+   ============================================================= */
+
+/* Page title with green gradient text */
+.events-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0d5c36, #28a745);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* "Add Event" button */
+.btn-event-add {
+  background-color: #0d5c36;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.btn-event-add:hover {
+  background-color: #0a4529;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Form card — same style as Donations for visual consistency */
+.event-form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border-left: 4px solid #0d5c36;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Focus color for form inputs */
+.event-form-card .form-control:focus {
+  border-color: #0d5c36;
+  box-shadow: 0 0 0 0.2rem rgba(13, 92, 54, 0.2);
+}
+
+/* ── Event Card ─────────────────────────── */
+/* CONCEPT: Card component pattern — a box with a header, body, and footer.
+   Widely used in dashboards to display summarized information. */
+.event-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  border: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+  /* CONCEPT: transition — smooth animation on property change (hover effect below) */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+.event-card:hover {
+  transform: translateY(-4px); /* lift the card on hover */
+  box-shadow: 0 10px 28px rgba(13, 92, 54, 0.15);
+}
+
+/* Coloured top banner area */
+.event-card-banner {
+  background: linear-gradient(135deg, #0d5c36, #28a745);
+  height: 80px;
+}
+.event-icon {
+  font-size: 2.2rem;
+}
+
+/* Date badge inside the card */
+.event-date-badge {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #0d5c36;
+  background: #e8f5ee;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* Edit button */
+.btn-event-edit {
+  border: 1.5px solid #0d5c36;
+  color: #0d5c36;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  transition: all 0.2s ease;
+}
+.btn-event-edit:hover {
+  background: #0d5c36;
+  color: white;
+}
+
+/* Delete button */
+.btn-event-delete {
+  border: 1.5px solid #dc3545;
+  color: #dc3545;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  transition: all 0.2s ease;
+}
+.btn-event-delete:hover {
+  background: #dc3545;
+  color: white;
+}
+
+/* Save button */
+.btn-event-save {
+  background: #0d5c36;
+  color: white;
+  border: none;
+  padding: 9px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+.btn-event-save:hover {
+  background: #0a4529;
+  color: white;
+}

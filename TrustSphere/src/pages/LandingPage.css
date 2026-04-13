@@ -1,0 +1,187 @@
+/* =============================================================
+   LandingPage.css — Styles for the public-facing landing page
+   ============================================================= */
+
+/* Full-page wrapper */
+.landing-wrapper {
+  min-height: 100vh;
+  background: #f8fffe;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  /* Remove any overflow:hidden set by body so landing page scrolls */
+  overflow: auto;
+}
+
+/* ── Navigation bar ─────────────── */
+.landing-nav {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.landing-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0d5c36;
+}
+
+.btn-landing-nav {
+  background: #0d5c36;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-landing-nav:hover {
+  background: #0a4529;
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* ── Hero Section ───────────────── */
+/* Background gradient from deep green to light */
+.hero-section {
+  background: linear-gradient(145deg, #0d5c36 0%, #1a7a4a 50%, #e9faf2 100%);
+  min-height: 70vh;
+  padding: 60px 24px;
+}
+
+.hero-badge {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.2rem); /* clamp = auto-scales between min and max */
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+}
+
+/* Highlighted word in the title */
+.text-highlight {
+  color: #7dff9c; /* bright green that pops on the dark background */
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.85);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.btn-hero-primary {
+  background: white;
+  color: #0d5c36;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-hero-primary:hover {
+  color: #0d5c36;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.btn-hero-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.6);
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.btn-hero-secondary:hover {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border-color: white;
+}
+
+/* ── Stats Strip ─────────────────── */
+.stats-strip {
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0d5c36;
+}
+.stat-label {
+  font-size: 0.85rem;
+  color: #718096;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Feature Cards ───────────────── */
+.features-section {
+  background: #f8fffe;
+}
+
+.section-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0d5c36;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(13,92,54,0.12);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+}
+
+.btn-feature-link {
+  background: #e8f5ee;
+  color: #0d5c36;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.btn-feature-link:hover {
+  background: #0d5c36;
+  color: white;
+}
+
+/* ── Footer ─────────────────────── */
+.landing-footer {
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  margin-top: auto;
+}
